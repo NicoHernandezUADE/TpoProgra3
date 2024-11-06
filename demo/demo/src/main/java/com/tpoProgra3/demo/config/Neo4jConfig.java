@@ -11,7 +11,7 @@ public class Neo4jConfig {
 
     @Bean
     public ReactiveNeo4jTransactionManager reactiveTransactionManager(Driver driver,
-                                                                      ReactiveDatabaseSelectionProvider databaseSelectionProvider) {
+        ReactiveDatabaseSelectionProvider databaseSelectionProvider) {
         return new ReactiveNeo4jTransactionManager(driver, databaseSelectionProvider);
     }
 }

@@ -17,7 +17,7 @@ public class ClubController {
     //method implementations with walkthroughs below
 
     @PutMapping
-    Mono<ClubEntity> createOrUpdateMovie(@RequestBody ClubEntity newClub) {
+    Mono<ClubEntity> createOrUpdateClub(@RequestBody ClubEntity newClub) {
         return clubRepository.save(newClub);
     }
 
